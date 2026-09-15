@@ -80,7 +80,7 @@ footer{border-top:1px solid var(--border);padding:30px 0;text-align:center;color
 <script>
 const themeToggle=document.getElementById("themeToggle");
 themeToggle.addEventListener("click",()=>{document.body.classList.toggle("dark");themeToggle.textContent=document.body.classList.contains("dark")?"☀️":"🌙"});
-const SUPABASE_URL="https://rpygonvhuqojacfepdsr.supabase.co/rest/v1/";
+const SUPABASE_URL="https://rpygonvhuqojacfepdsr.supabase.co";
 const SUPABASE_PUBLISHABLE_KEY="sb_publishable_geuJCqvv-juEMfrs-teQYQ_yVy5ZYpb";
 const supabaseClient=(SUPABASE_URL.includes("MASUKKAN")||SUPABASE_PUBLISHABLE_KEY.includes("MASUKKAN"))?null:window.supabase.createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY);
 
